@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": [
+        "java/lib/**/*.jar",
+    ],
+    "objectscript.export.folder": "iris/src",
+    "objectscript.conn": {
+        "active": false,
+        "username": "superuser",
+        "password": "SYS",
+        "ns": "USER",
+        "port": 52773,
+        "host": "localhost"
+    },
+}
