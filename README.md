@@ -12,6 +12,14 @@ Build the image:
 ```console
 $ git clone https://github.com/isc-krakshith/iris-swift
 $ cd iris-swift
+```
+Copy the necessary jars from java/dist to java/lib directory. Only intersystems, pw-swift-core, commons and gson jars are required
+```console
+$ cp java/dist/intersystems* java/lib
+$ cp java/dist/pw* java/lib
+$ cp java/dist/commons* java/lib
+$ cp java/dist/gson* java/lib
+
 $ docker-compose build
 ```
 
@@ -33,12 +41,6 @@ In VS Code, open [java/src/swift/pex/FirstService.java](java/src/swift/pex/First
 
 ## (c). Making changes
 * Make some changes on [FirstService.java](java/src/swift/pex/FirstService.java), [FirstProcess.java](java/src/swift/pex/FirstProcess.java) or [FirstOperation.java](java/src/swift/pex/FirstOperation.java) (e.g. add some extra `LOGINFO`).
-* Copy the necessary jars from java/dist to java/lib directory
-    * only intersystems, pw-swift-core, commons and gson jars are required
-        * cp java/dist/intersystems* java/lib
-        * cp java/dist/pw* java/lib
-        * cp java/dist/commons* java/lib
-        * cp java/dist/gson* java/lib
 * Stop the containers: `docker-compose down`
 * Re-compile: `docker-compose build`
 * Run: `docker-compose up -d`
