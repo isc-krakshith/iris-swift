@@ -33,6 +33,14 @@ In VS Code, open [java/src/swift/pex/FirstService.java](java/src/swift/pex/First
 
 ## (c). Making changes
 * Make some changes on [FirstService.java](java/src/swift/pex/FirstService.java), [FirstProcess.java](java/src/swift/pex/FirstProcess.java) or [FirstOperation.java](java/src/swift/pex/FirstOperation.java) (e.g. add some extra `LOGINFO`).
-* Re-compile using `docker-compose build` and run again.
+* Copy the necessary jars from java/dist to java/lib directory
+    * only intersystems, pw-swift-core, commons and gson jars are required
+        * cp java/dist/intersystems* java/lib
+        * cp java/dist/pw* java/lib
+        * cp java/dist/commons* java/lib
+        * cp java/dist/gson* java/lib
+* Stop the containers: `docker-compose down`
+* Re-compile: `docker-compose build`
+* Run: `docker-compose up -d`
 * Test your changes.
 
