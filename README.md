@@ -22,9 +22,9 @@ $ docker-compose build
 docker-compose up -d
 ```
 
-* Open the [Management Portal](http://localhost:52773/csp/sys/UtilHome.csp).
+* Open the [Management Portal](http://localhost:9092/csp/sys/UtilHome.csp).
 * Login using the default `superuser`/ `SYS` account.
-* Click on [Swift.PEX.FirstDemo.Production](http://localhost:52773/csp/user/EnsPortal.ProductionConfig.zen?PRODUCTION=Swift.PEX.FirstDemo.Production&$NAMESPACE=USER) to access the sample interoperability production we will use. You can access also through *Interoperability > User > Configure > Production*.
+* Click on [Swift.PEX.FirstDemo.Production](http://localhost:9092/csp/user/EnsPortal.ProductionConfig.zen?PRODUCTION=Swift.PEX.FirstDemo.Production&$NAMESPACE=USER) to access the sample interoperability production we will use. You can access also through *Interoperability > User > Configure > Production*.
 
 ## (b). Enable Business Service and Business Process
 * Check message log to see what happens.
