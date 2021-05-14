@@ -2,4 +2,3 @@
 obj
 bin
 *.bak
-java/lib/*.jar

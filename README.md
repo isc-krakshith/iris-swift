@@ -12,17 +12,8 @@ Build the image:
 ```console
 $ git clone https://github.com/isc-krakshith/iris-swift
 $ cd iris-swift
-```
-Copy the necessary jars from java/dist to java/lib directory. Only intersystems, pw-swift-core, commons and gson jars are required
-```console
-$ cp java/dist/intersystems* java/lib
-$ cp java/dist/pw* java/lib
-$ cp java/dist/commons* java/lib
-$ cp java/dist/gson* java/lib
-
 $ docker-compose build
 ```
-
 # Examples
 
 ## (a). FirstDemo interoperability Production
