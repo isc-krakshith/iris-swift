@@ -8,7 +8,7 @@ services:
     container_name: jgw
     restart: always
     ports: 
-      - 55555:55555
+      - 9091:55555
 
   # iris
   iris:
@@ -20,5 +20,5 @@ services:
     depends_on:
       - 'jgw'
     ports:
-      - 52773:52773
+      - 9092:52773
       - 51773:51773
